@@ -4,6 +4,7 @@ package com.ramiro.ernesto.simplenavdraw;
  * Created by ernesto on 21/12/16.
  */
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 
 
@@ -56,6 +57,9 @@ public class MainActivityDevel extends AppCompatActivity implements NavigationVi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

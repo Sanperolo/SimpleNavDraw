@@ -6,6 +6,7 @@ package com.ramiro.ernesto.simplenavdraw;
  */
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 
 
@@ -74,6 +75,11 @@ public class MainActivityDevel extends AppCompatActivity implements NavigationVi
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
+
+//        cambiar color de las pestañas
+        tabLayout.setBackgroundColor(Color.parseColor("#FF000000"));
+
+//        colocar iconos a las pestañas
         tabLayout.getTabAt(0).setIcon(R.drawable.ic_menu_camera);
         tabLayout.getTabAt(1).setIcon(R.drawable.ic_menu_gallery);
         tabLayout.getTabAt(2).setIcon(R.drawable.ic_menu_slideshow);

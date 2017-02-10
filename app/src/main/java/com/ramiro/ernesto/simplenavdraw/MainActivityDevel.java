@@ -34,7 +34,8 @@ import android.support.v7.app.AppCompatActivity;
         import android.view.MenuItem;
         import android.view.View;
         import android.view.ViewGroup;
-        import android.widget.TextView;
+import android.widget.ImageView;
+import android.widget.TextView;
 
         import static android.R.attr.fragment;
 
@@ -78,7 +79,7 @@ public class MainActivityDevel extends AppCompatActivity implements NavigationVi
         tabLayout.setupWithViewPager(mViewPager);
 
 //        cambiar color de las pestañas
-        tabLayout.setBackgroundColor(Color.parseColor("#FF000000"));
+        tabLayout.setBackgroundColor(Color.parseColor("#FF5544"));
 
 //        colocar iconos a las pestañas
         tabLayout.getTabAt(0).setIcon(R.drawable.ic_menu_camera);
@@ -195,6 +196,7 @@ public class MainActivityDevel extends AppCompatActivity implements NavigationVi
             View rootView = inflater.inflate(R.layout.fragment_main2, container, false);
             TextView textView = (TextView) rootView.findViewById(R.id.section_label);
             textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
+
             return rootView;
         }
     }

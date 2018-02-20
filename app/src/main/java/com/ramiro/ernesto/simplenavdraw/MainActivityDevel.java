@@ -66,7 +66,9 @@ public class MainActivityDevel extends AppCompatActivity implements NavigationVi
         startActivity(intent);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+ /*       toolbar.setTitleTextColor(Color.RED);*/
         setSupportActionBar(toolbar);
+
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
@@ -79,7 +81,7 @@ public class MainActivityDevel extends AppCompatActivity implements NavigationVi
         tabLayout.setupWithViewPager(mViewPager);
 
 //        cambiar color de las pestañas
-        tabLayout.setBackgroundColor(Color.parseColor("#FF5544"));
+        tabLayout.setBackgroundColor(Color.parseColor("#5544FF"));
 
 //        colocar iconos a las pestañas
         tabLayout.getTabAt(0).setIcon(R.drawable.ic_menu_camera);
